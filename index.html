@@ -8,6 +8,9 @@
     tailwind.config = {
       theme: {
         extend: {
+          boxShadow: {
+            input: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+          },
           colors: {
             clifford: '#da373d',
           }
@@ -30,7 +33,7 @@
   <section class="flex">
     <div class="w-[30%] pt-[98px] pl-[91px]">
       <h1 class="text-2xl font-normal ">Sing-in</h1>
-      <input>
+      <input class="rounded-[20px] border-none shadow shadow-gray-500 h-8 mb-9 mt-28 placeholder:text-[#645A5A] text-[12px]" placeholder="e-mail address">
       <input>
     </div>
     <div class="w-[65%]">2</div>
