@@ -20,11 +20,14 @@ passWordInput.addEventListener("input", (event) => {
 });
 
 const handleStorageValue = () => {
-  localStorage.setItem("userResgisterd", {
+  const userInfo = {
     name: nameValue,
     email: emailValue,
     passWordValue: passWordValue,
-  });
+  };
+
+  localStorage.setItem("userResgisterd", JSON.stringify(userInfo));
+  alert("Usúario registrado com sucesso!");
 
   inputName.value = "";
   emailInput.value = "";

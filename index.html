@@ -9,14 +9,14 @@
         theme: {
           extend: {
             boxShadow: {
-              input: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+              input: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
             },
             colors: {
-              clifford: '#da373d',
+              clifford: "#da373d",
             },
           },
         },
-      }
+      };
     </script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <style type="text/tailwindcss">
@@ -27,6 +27,8 @@
       }
     </style>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./sining.js" defer></script>
+
     <title>Dev Community</title>
   </head>
   <body>
@@ -39,14 +41,18 @@
           <input
             class="rounded-[20px] border-none shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] h-11 px-8 placeholder:text-[#645A5A] text-base"
             placeholder="e-mail address"
+            id="emailValue"
           />
           <input
             class="rounded-[20px] border-none shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] h-11 px-8 placeholder:text-[#645A5A] text-base"
             placeholder="password"
+            id="passwordValue"
           />
         </div>
         <div class="flex items-center justify-between">
           <button
+            type="button"
+            id="submitButtonValue"
             class="text-white rounded-3xl bg-[#4298E8] h-11 hover:brightness-90 transition-colors duration-300 inline-flex items-center justify-center px-8"
           >
             Sing-in
@@ -62,3 +68,4 @@
     </section>
   </body>
 </html>
+
